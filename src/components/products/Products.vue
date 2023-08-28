@@ -9,7 +9,8 @@
 <script setup>
 import store from "../../store/index"
 import ProductItem from '../../components/products/ProductItem.vue'
-const products = store.state.products;
+import { computed } from "vue";
+const products =  computed(() =>store.state.products);
 
 
 </script>
